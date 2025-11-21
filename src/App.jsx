@@ -27,7 +27,7 @@ function App() {
     e.preventDefault()
     if (formData.author && formData.year && formData.title && formData.source) {
       const newCitation = {
-        id: citations.length + 1,
+        id: Date.now(),
         ...formData,
         year: parseInt(formData.year)
       }
